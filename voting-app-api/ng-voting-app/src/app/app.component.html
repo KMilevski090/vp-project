@@ -1,0 +1,39 @@
+<div class="bgColor">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/pie-chart.png" width="46" height="42" class="d-inline-block align-top" alt="">
+                <h2 class="float-right">VotingApp</h2>
+            </a>
+            <div class="justify-content-between">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link hover-text-color" routerLink="/discover"
+                           routerLinkActive="active">Discover</a>
+                    </li>
+                    <li class="nav-item" *ngIf="!userLogged">
+                        <a class="nav-link hover-text-color" routerLink="/register"
+                           routerLinkActive="active">Register</a>
+                    </li>
+                    <li class="nav-item" *ngIf="!userLogged">
+                        <a class="nav-link hover-text-color" routerLink="/login" routerLinkActive="active">Log In</a>
+                    </li>
+                    <li class="nav-item" *ngIf="userLogged">
+                        <a class="nav-link hover-text-color" routerLink="/profile" routerLinkActive="active">My
+                            profile</a>
+                    </li>
+                    <li class="nav-item" *ngIf="userLogged">
+                        <a class="nav-link hover-text-color" routerLink="/new-poll" routerLinkActive="active">Create
+                            poll</a>
+                    </li>
+                    <li class="nav-item " *ngIf="userLogged">
+                        <a class="nav-link cursor-pointer hover-text-color" (click)="logout()">Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<router-outlet (activate)="onActivate($event)"></router-outlet>
+
+

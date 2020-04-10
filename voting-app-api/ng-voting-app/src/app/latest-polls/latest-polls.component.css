@@ -1,0 +1,55 @@
+.latest-container {
+    width: 500px;
+}
+
+.question {
+    font-weight: bold;
+    width: 380px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.poll {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border: 1px solid #fca2a0;
+    border-radius: 10px;
+}
+
+.poll:hover {
+    cursor: pointer;
+    background-color: #fce5e7;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 46px;
+    height: 42px;
+    float: left;
+}
+
+.img-times-voted {
+    position: relative;
+    text-align: center;
+    float: left;
+    width: 15%;
+}
+
+.times-voted {
+    position: absolute;
+    left: -2px;
+    top: 11px;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 14px;
+}
+
+.date-created{
+    font-size: 13px;
+}

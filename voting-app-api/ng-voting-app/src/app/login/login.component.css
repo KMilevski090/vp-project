@@ -1,0 +1,22 @@
+.btn {
+    background-color: #E33D6F;
+    width: 100px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #a83354;
+}
+
+.color-text {
+    color: #B31166;
+}
+
+a {
+    color: #B31166;
+}
+
+input:focus {
+    border-color: #E33D6F;
+    box-shadow: 0 0 25px #E33D6F;
+}

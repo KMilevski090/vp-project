@@ -1,0 +1,54 @@
+ul{
+    list-style: none;
+}
+
+.custom-radio :hover{
+    cursor: pointer;
+    color: #E33D6F;
+}
+
+input[type=radio] + .custom-control-label:after{
+    margin-top: 9px;
+}
+
+input[type=radio]:checked + .custom-control-label:after{
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 9px;
+}
+
+.custom-control-label{
+    margin-top: 9px;
+}
+
+input[type=radio]:checked + .custom-control-label{
+    font-weight: bold;
+    color: #B31166;
+}
+
+.custom-radio .custom-control-input~.custom-control-label::before{
+    transform: scale(2);
+    margin-top: 9px;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before{
+    background-color: #E33D6F;
+    border-color: #B31166;
+}
+
+.custom-radio .custom-control-input:focus~.custom-control-label::before{
+    box-shadow: 0 0 15px #B31166;
+}
+
+.text-size{
+    margin-top: -20px;
+    font-size: 25px;
+}
+
+.btn{
+    background-color: #E33D6F;
+    color: white;
+}
+.btn:hover{
+    background-color: #a83354;
+}

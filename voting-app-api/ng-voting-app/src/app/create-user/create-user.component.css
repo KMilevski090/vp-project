@@ -1,0 +1,11 @@
+input:focus{
+    border-color: #E33D6F;
+    box-shadow: 0 0 25px #E33D6F;
+}
+.btn{
+    background-color: #E33D6F;
+    color: white;
+}
+.btn:hover{
+    background-color: #a83354;
+}

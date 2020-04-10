@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+.bgColor {
+    background-color: #51646B;
+}
+
+.cursor-pointer:hover {
+    cursor: pointer;
+}
+
+.hover-text-color:hover{
+    color:  #E33D6F !important;
+}
+.active{
+    color: #E33D6F !important;
+    font-weight: bold;
+}
+h2{
+    font-family: 'Lobster', cursive;
+}

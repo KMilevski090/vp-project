@@ -1,0 +1,12 @@
+<ul class="position-relative text-center">
+    <li *ngFor="let option of options">
+        <div>
+            {{option.value}} {{option.percent}}% ({{option.timesVoted}} votes)
+        </div>
+    </li>
+</ul>
+<div [hidden]="!pieChart">
+    <div class="w-50 h-50 float-left">
+        <canvas id="pie-chart">{{pieChart}}</canvas>
+    </div>
+</div>

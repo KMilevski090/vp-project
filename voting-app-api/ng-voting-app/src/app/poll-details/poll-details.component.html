@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="">
+        <div *ngIf="errorMessage">
+            <h1>Error: {{errorMessage.error}}</h1>
+        </div>
+        <div *ngIf="poll" class="">
+            <h2 class="text-center pb-4 pt-4">{{poll.question}}</h2>
+            <p class="text-center">Choose your answer:</p>
+           <div class="d-flex flex-column justify-content-center align-items-center">
+                   <ul>
+                <li *ngFor="let option of poll.options">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="{{option.id}}" name="option" class="custom-control-input"
+                               value="{{option.id}}" (change)=selectedOption($event)>
+                        <label class="custom-control-label  mb-3"
+                               for="{{option.id}}"><span class="text-size ml-2"> {{option.value}}</span></label>
+                    </div>
+                </li>
+            </ul>
+            <div class="text-muted">Created by {{poll.user.username}}
+            <div class="alert alert-danger" role="alert" *ngIf="duplicateVoteError">
+                {{duplicateVoteError.error}}
+            </div>
+            </div>
+            <button class="btn btn-info" (click)="vote()">VOTE</button>
+           </div>
+            <app-show-results></app-show-results>
+        </div>
+    </div>
+</div>
+<div *ngIf="loading">
+    <h1>poll loading</h1>
+</div>
